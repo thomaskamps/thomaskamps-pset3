@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CEE623171DDB2B6C002BF31B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE623161DDB2B6C002BF31B /* AppDelegate.swift */; };
-		CEE623191DDB2B6C002BF31B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE623181DDB2B6C002BF31B /* ViewController.swift */; };
+		CEE623191DDB2B6C002BF31B /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE623181DDB2B6C002BF31B /* FavoritesViewController.swift */; };
 		CEE6231C1DDB2B6C002BF31B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE6231A1DDB2B6C002BF31B /* Main.storyboard */; };
 		CEE6231E1DDB2B6C002BF31B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE6231D1DDB2B6C002BF31B /* Assets.xcassets */; };
 		CEE623211DDB2B6C002BF31B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE6231F1DDB2B6C002BF31B /* LaunchScreen.storyboard */; };
+		CEE623291DDB3358002BF31B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE623281DDB3358002BF31B /* SearchViewController.swift */; };
+		CEE6232B1DDE6A1F002BF31B /* APIconnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6232A1DDE6A1F002BF31B /* APIconnect.swift */; };
+		CEE6232D1DDE7314002BF31B /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6232C1DDE7314002BF31B /* SearchTableViewCell.swift */; };
+		CEFA35811DDF565900CE9F63 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA35801DDF565900CE9F63 /* MovieViewController.swift */; };
+		CEFA35831DDF6B9700CE9F63 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFA35821DDF6B9700CE9F63 /* FavoritesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEE623131DDB2B6C002BF31B /* thomaskamps-pset3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thomaskamps-pset3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE623161DDB2B6C002BF31B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEE623181DDB2B6C002BF31B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CEE623181DDB2B6C002BF31B /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		CEE6231B1DDB2B6C002BF31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEE6231D1DDB2B6C002BF31B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE623201DDB2B6C002BF31B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEE623221DDB2B6C002BF31B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE623281DDB3358002BF31B /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CEE6232A1DDE6A1F002BF31B /* APIconnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIconnect.swift; sourceTree = "<group>"; };
+		CEE6232C1DDE7314002BF31B /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		CEFA35801DDF565900CE9F63 /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		CEFA35821DDF6B9700CE9F63 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +65,13 @@
 			isa = PBXGroup;
 			children = (
 				CEE623161DDB2B6C002BF31B /* AppDelegate.swift */,
-				CEE623181DDB2B6C002BF31B /* ViewController.swift */,
+				CEE623181DDB2B6C002BF31B /* FavoritesViewController.swift */,
+				CEE6232A1DDE6A1F002BF31B /* APIconnect.swift */,
+				CEE623281DDB3358002BF31B /* SearchViewController.swift */,
 				CEE6231A1DDB2B6C002BF31B /* Main.storyboard */,
+				CEFA35801DDF565900CE9F63 /* MovieViewController.swift */,
+				CEE6232C1DDE7314002BF31B /* SearchTableViewCell.swift */,
+				CEFA35821DDF6B9700CE9F63 /* FavoritesTableViewCell.swift */,
 				CEE6231D1DDB2B6C002BF31B /* Assets.xcassets */,
 				CEE6231F1DDB2B6C002BF31B /* LaunchScreen.storyboard */,
 				CEE623221DDB2B6C002BF31B /* Info.plist */,
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEE623191DDB2B6C002BF31B /* ViewController.swift in Sources */,
+				CEE623291DDB3358002BF31B /* SearchViewController.swift in Sources */,
+				CEE623191DDB2B6C002BF31B /* FavoritesViewController.swift in Sources */,
 				CEE623171DDB2B6C002BF31B /* AppDelegate.swift in Sources */,
+				CEE6232B1DDE6A1F002BF31B /* APIconnect.swift in Sources */,
+				CEE6232D1DDE7314002BF31B /* SearchTableViewCell.swift in Sources */,
+				CEFA35811DDF565900CE9F63 /* MovieViewController.swift in Sources */,
+				CEFA35831DDF6B9700CE9F63 /* FavoritesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thomaskamps.thomaskamps-pset3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,6 +297,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W94L64SGM;
 				INFOPLIST_FILE = "thomaskamps-pset3/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "thomaskamps.thomaskamps-pset3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +324,7 @@
 				CEE623271DDB2B6C002BF31B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
