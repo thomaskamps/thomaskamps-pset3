@@ -21,6 +21,7 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         super.viewDidLoad()
         searchBar.delegate = self
         searchBar.showsCancelButton = true
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -113,7 +114,6 @@ class SearchViewController: UIViewController, UISearchBarDelegate, UITableViewDa
         } else {
             cell.poster.image = UIImage(named: "default_poster")
         }
-        
         return cell
     }
     

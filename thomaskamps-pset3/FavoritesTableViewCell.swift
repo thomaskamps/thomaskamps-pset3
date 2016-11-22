@@ -11,8 +11,9 @@ import UIKit
 class FavoritesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var posterOutlet: UIImageView!
-    @IBOutlet weak var subtitleOutlet: UILabel!
     @IBOutlet weak var titleOutlet: UILabel!
+    @IBOutlet weak var subtitleOutlet: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

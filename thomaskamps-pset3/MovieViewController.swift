@@ -13,10 +13,11 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var textOutlet: UITextView!
     @IBOutlet weak var subtitleOutlet: UILabel!
     @IBOutlet weak var titleOutlet: UILabel!
-    @IBOutlet weak var buttonOutlet: UIView!
     @IBOutlet weak var imgOutlet: UIImageView!
+    @IBOutlet weak var button: UIButton!
 
     var imdbID: String = ""
+    var movies: [String] = []
     
     func getJSON(givenID: String){
         let reqURL = URL(string: "https://www.omdbapi.com/?plot=full&r=json&i="+givenID)
@@ -61,6 +62,15 @@ class MovieViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         getJSON(givenID: imdbID)
+        let userDef = UserDefaults.standard
+        self.movies = userDef.object(forKey:"savedMovies") as? [String] ?? [String]()
+        if movies.contains(imdbID) {
+            button.setTitle("Remove from watchlist", for: .normal)
+            button.setTitleColor(UIColor.red, for: .normal)
+        } else {
+            button.setTitle("Add to watchlist", for: .normal)
+            button.setTitleColor(UIColor.blue, for: .normal)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,10 +78,22 @@ class MovieViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func buttonAction(_ sender: Any) {
+    @IBAction func buttonFix(_ sender: Any) {
+        let userDef = UserDefaults.standard
+        if movies.contains(imdbID) {
+            button.setTitle("Add to watchlist", for: .normal)
+            button.setTitleColor(UIColor.blue, for: .normal)
+            if let index = self.movies.index(of: imdbID) {
+                self.movies.remove(at: index)
+                userDef.set(self.movies, forKey: "savedMovies")
+            }
+        } else {
+            button.setTitle("Remove from watchlist", for: .normal)
+            button.setTitleColor(UIColor.red, for: .normal)
+            self.movies.append(imdbID)
+            userDef.set(self.movies, forKey: "savedMovies")
+        }
     }
-
-    
     /*
     // MARK: - Navigation
 
